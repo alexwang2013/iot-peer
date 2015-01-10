@@ -8,5 +8,23 @@
   "license": "MIT",
   "dependencies": {
     "socket.io-client": "1.2.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexwang2013/iot-peer.git"
+  },
+  "keywords": [
+    "iot",
+    "realtime",
+    "data",
+    "cloud"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexwang2013/iot-peer/issues"
+  },
+  "homepage": "https://github.com/alexwang2013/iot-peer"
 }
