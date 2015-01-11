@@ -1,4 +1,5 @@
 var server_url = "http://www.tinymid.com:9033";
+
 var current_temperature = 25;
 var connected = false;
 var socket = require('socket.io-client')(server_url);
@@ -27,11 +28,20 @@ function login(sensor_name, callback) {
 
 function send_data( value ) {
 	if(connected) {
-		socket.emit('new message', value);
+		socket.emit('new_sensor_data', value);
 	}
 }
 
+function onDataReceived(callback) {
+	socket.on('new_sensor_data', function (data) {
+		connected = true;
+		if(callback) {
+			callback(data);
+		}
+	});
+}
 
 var exports = module.exports = {};
 exports.send_data = send_data;
 exports.login = login;
+exports.onDataReceived = onDataReceived;
