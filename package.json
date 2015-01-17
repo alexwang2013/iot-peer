@@ -1,6 +1,6 @@
 {
   "name": "iot-peer",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "an peer of iotdata community",
   "main": "iot-peer",
   "author": "Zhaoqiang Wang",

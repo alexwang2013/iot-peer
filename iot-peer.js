@@ -1,5 +1,4 @@
-var server_url = "http://www.tinymid.com:9033";
-
+var server_url = "http://tinymid.mybluemix.net";
 var current_temperature = 25;
 var connected = false;
 var socket = require('socket.io-client')(server_url);
